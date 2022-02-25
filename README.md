@@ -2,7 +2,7 @@
 ## Revo Shoe Store
 - B2C Community Site for customizable shoes
 ## Team Members
-- Patrick Sepiro(Team Leader)
+- Patrick Sepnio(Team Leader)
 - Matthew Jeffery
 - Eli Couture
 - Michael Scott
