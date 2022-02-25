@@ -1,0 +1,50 @@
+div {
+    border-radius: 5px;
+    background-color: #3C5AC8;
+    padding: 20px;
+  }
+
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: whitesmoke;
+}
+
+input[type=submit] {
+  width: 25%;
+  background-color: black;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  margin-left: 600px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.label{
+    color: white;
+}
+
+.form{
+    background-color:#3C5AC8;
+}
+
+.sendMessage{
+
+    border-radius: 5px;
+    background-color: black;
+    padding: 20px;
+    font-size: 20px;
+    color: white;
+
+}

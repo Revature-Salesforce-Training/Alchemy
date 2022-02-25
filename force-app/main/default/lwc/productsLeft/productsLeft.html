@@ -1,0 +1,22 @@
+<template>
+
+<!-- hard coded to search for the Air Force 1 shoes -->
+<p>
+    <template if:true={displayForm}>
+    <template for:each={returned} for:item="prd">
+        <p class="custFullName" key={prd.id}>Product Name: {prd.Name}</p>
+        <br key={prd.id}/>
+
+        <p class="custOrdNum" key={prd.id}>Product Left: {prd.NumberLeft__c}</p>
+        <br key={prd.id}/>
+
+        <p class="custOrdStatus" key={prd.id}>Product Code: {prd.ProductCode}</p>
+    </template>
+</template>
+</p>
+
+<button onclick={doProductSearch}>  
+search
+</button>
+
+</template>

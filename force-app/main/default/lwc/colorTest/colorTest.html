@@ -1,0 +1,39 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <div>
+        <div>
+        <template if:true={colorValues.data}>
+
+            <div>
+                <lightning-record-form object-api-name={orderItemObject} fields={orderItemFields}>
+
+                </lightning-record-form>
+            </div>
+
+
+            <div class="slds-grid">
+                <div class="slds-col">
+                    <abbr title="required" class="slds-required">*</abbr>
+                    Color of Product: {currentColorValue} &nbsp;
+                </div>
+                <div class="slds-col">
+                <!-- Display artist based on picklist selection, or generic message if the promise returns an error-->                
+                <template if:true={getArtisanName.data}>Artist: <b>{getArtisanName.data}</b></template>
+                <template if:true={getArtisanName.error}>Artist: <b>Revo Shoes Team</b></template>
+                </div>
+            </div>
+
+            <label for="FieldSelect" class="slds-form-element__label slds-no-flex">
+                Color:
+            </label>
+            
+            <select class="slds-select" name="colorValues" label="ColorSelect" value={currentColorValue} onchange={setColorValue}>                
+                <template for:each={colorValues.data.values} for:item="item">
+                    <option key={item.value} value={item.value} label={item.label}>{item.label}</option>
+                </template>
+            </select>
+            
+        </template>
+        </div>
+    </div>
+</template>

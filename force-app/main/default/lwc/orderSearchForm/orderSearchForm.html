@@ -1,0 +1,52 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <div class="slds-grid slds-gutters">
+        <template if:true={displayForm}>
+            <div class="slds-col slds-size_6-of-12">
+            <form>
+                <label for="fname">First Name: </label>
+                <input type="text" id="fname" name="fname" class="firstNameInput">
+                <br/>
+                <br/>
+
+                <label for="lname">Last Name: </label>
+                <input type="text" id="lname" name="lname" class="lastNameInput">
+                <br/>
+                <br/>
+
+                <label for="ordnum">Order Number: ON-</label>
+                <input type="text" id="ordnum" name="ordnum" class="orderNumberInput">
+                <br/>
+                <br/>
+
+                <label for="searchBtn" class="errorMsg"></label>
+                <button id="searchBtn" type="button" onclick={searchForOrder}>Search</button>
+            </form>
+            </div>
+        </template>
+
+        <template if:true={displayOrderForm}>
+            <div class="slds-col slds-size_6-of-12 orderDisplay">
+                <template for:each={ordersReturned} for:item="ord">
+                    <div key={ord.id} class="slds-card slds-col slds-size_5-of-12">
+                        <p class="custFullName" key={ord.id}>Full Name: {ord.Customer_Full__c}</p>
+                        <br key={ord.id}/>
+    
+                        <p class="custOrdNum" key={ord.id}>Order Number: {ord.Name}</p>
+                    </div>
+                    <br key={ord.id}/>
+    
+                    <div key={ord.id} class="slds-card slds-col slds-size_4-of-12">
+                        <p class="custOrdStatus" key={ord.id}>Order Status: {ord.Order_Status__c}</p>
+                    </div>
+                    <br key={ord.id}/>
+                    
+                    <div key={ord.id} class="slds-card slds-col slds-size_3-of-12">
+                        <button class="cancelBtn" key={ord.id} onclick={cancelOrderJS}>Cancel</button>
+                        <button class="clearBtn" key={ord.id} onclick={clearForm}>Clear</button>
+                    </div>
+                </template>
+            </div>
+        </template>
+    </div>
+</template>

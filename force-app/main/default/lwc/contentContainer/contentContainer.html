@@ -1,0 +1,39 @@
+<template>
+    <!-- Content shown based on app state-->
+
+    <template if:true={isHomePage}>
+        <div class="slds-grid">
+            <div class="slds-col">
+                <img src={runningShoes}/>
+            </div>
+            <div class="slds-col">
+                <c-twitter-handler-lwc></c-twitter-handler-lwc>
+            </div>
+        </div>>
+    </template>
+
+    <template if:true={isProductsPage}>
+        <c-product-list></c-product-list>
+        <c-products-left></c-products-left>
+    </template>
+    <template if:true={isOrderPage}>
+        <c-order-search-form></c-order-search-form>
+    </template>
+    <template if:true={isContactPage}>
+        <c-web-lead></c-web-lead>
+    </template>
+
+    <template if:true={isLoginPage}>
+        <c-account-creator></c-account-creator>
+    </template>
+
+    <template if:true={isServicePage}>
+        <c-web-to-case></c-web-to-case>
+    </template>
+
+    <template if:true={isCartDetail}>
+        <c-color-test></c-color-test>
+    </template>
+
+
+</template>

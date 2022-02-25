@@ -1,0 +1,12 @@
+<!-- Creates a form that saves customr account information-->
+<template>
+    <div class="sendMessage"> New Customer? Register for a Revo customer Account</div>   
+    <lightning-card>
+        <lightning-record-form
+            object-api-name={objectApiName}
+            fields={fields}
+            onsuccess={handleSuccess}>
+        </lightning-record-form>
+    </lightning-card>
+
+</template>

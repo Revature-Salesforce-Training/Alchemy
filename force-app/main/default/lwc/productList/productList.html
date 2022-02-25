@@ -1,0 +1,18 @@
+<!-- sldsValidatorIgnore -->
+<!-- Creates a Table displaying all the products and their description-->
+<template>
+    <div class="sendMessage">All the Products Revo Offers</div>
+    
+    <div>
+    <lightning-card >
+        <template if:true={products.data}>
+            <lightning-datatable
+                key-field="Id"
+                data={products.data}
+                columns={columns}
+            >
+           </lightning-datatable>
+        </template>
+    </lightning-card>
+</div>
+</template>

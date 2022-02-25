@@ -1,0 +1,26 @@
+<template>
+    <div class="slds-page-header">
+        <div class="slds-grid">
+            <div class="slds-col slds-col_bump-right">
+                <img src={revoLogoUrl} class="revo-logo" value="home" onclick={handleMenuClick}>
+            </div>
+            <div class="slds-col">
+                <div class="slds-button-group" role="group">
+                    <button class="slds-button slds-button_neutral" value="products" onclick={handleMenuClick}>Products/Availability</button>
+                    <button class="slds-button slds-button_neutral" value="orders" onclick={handleMenuClick}>Orders</button>
+                    <button class="slds-button slds-button_neutral" value="contact" onclick={handleMenuClick}>Contact Us</button>                    
+                    <button class="slds-button slds-button_neutral" value="login" onclick={handleMenuClick}>Create Account</button>                    
+                    <button class="slds-button slds-button_neutral" value="service" onclick={handleMenuClick}>Service</button>                                          
+                    <button class="slds-button slds-button_neutral" value="cart" onclick={handleCartClick}>
+                        <span class="slds-icon_container slds-icon-utility-announcement" title="Access user cart">
+                            <svg class="slds-icon slds-icon-text-default" aria-hidden="true" value="cart">
+                              <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#cart"></use>
+                            </svg>
+                            <span class="slds-assistive-text">Cart Icon</span>
+                          </span>
+                    </button>
+                  </div>
+            </div>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,62 @@
+<!-- sldsValidatorIgnore -->
+<!-- Creating a Form that saves customer information -->
+<template>
+    <!-- This following code is for custom LDS form
+        
+        Pleas fill out this Contact Form for:
+    
+    <lightning-card>
+        <lightning-record-form
+            object-api-name={objectApiName}
+            fields={fields}
+            onsuccess={handleSuccess}>
+        </lightning-record-form>
+    </lightning-card> -->
+
+
+
+    <!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+<!--  If necessary, please modify the charset parameter to specify the        -->
+<!--  character set of your HTML page.                                        -->
+<!--  ----------------------------------------------------------------------  -->
+
+
+
+    <!--  ----------------------------------------------------------------------  -->
+    <!--  NOTE: Please add the following <FORM> element to your page.             -->
+    <!--  ----------------------------------------------------------------------  -->
+    <div class="sendMessage">
+        Have Questions? Send Us A Message
+    </div>
+    <form  class ="form" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+    
+    <input type=hidden name="oid" value="00D8c000002IxZw">
+    <input type=hidden name="retURL" value="#">  
+
+    <div >
+    <label class= "label" for="first_name" >First Name</label><br>
+    <input  id="first_name"  name="first_name"  type="text" placeholder="Your First Name..." /><br>
+    <label class= "label" for="last_name">Last Name</label><br>
+    <input  id="last_name"  name="last_name" type="text" placeholder="Your Last Name..."   /><br>
+    </div>
+
+    <div >
+    <label class= "label" for="email">Email</label><br>
+    <input  id="email"  name="email"  type="text" placeholder="Your Email..." /><br>
+    <label class= "label" for="company">Company</label><input  id="company"  name="company"  type="text" placeholder="Your Company Name..." /><br>
+    </div>
+
+    <div  >
+    <label class= "label" for="city">City</label><br>
+    <input  id="city"  name="city"  type="text" placeholder="Your City..."/><br>
+    <label class= "label" for="state">State/Province</label><br>
+    <input  id="state"  name="state"  type="text" placeholder="Your State or Province Name..." /><br>
+    </div><br>
+
+    <input type="submit" name="submit" value="Submit">
+    
+    </form>
+    
+
+</template>

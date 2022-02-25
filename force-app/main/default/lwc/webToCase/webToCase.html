@@ -1,0 +1,48 @@
+<!-- sldsValidatorIgnore -->
+<!-- sldsValidatorIgnore -->
+<template>
+
+    <div class="WebToCaseHolder slds-grid slds-gutters slds-grid_align-spread slds-wrap">
+    <form class="slds-col slds-size_8-of-12" action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+    
+    <input type=hidden name="orgid" value="00D8c000002J2dL">
+    <input type=hidden name="retURL" value="https://revp1test-developer-edition.na213.force.com/">
+    
+    
+        <div class="namesHolder slds-col slds-size_12-of-12">
+            <br />
+            <div class="contactName slds-col slds-size_3-of-12">
+                <label for="name">Contact Name: </label><br><input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
+            </div>
+            <div class="contactEmail slds-col slds-size_3-of-12">
+                <label for="email">Email: </label><br><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+            </div>
+        </div>
+        <div class="contactInfoHolder slds-col slds-size_12-of-12">
+            <div class="contactEmail slds-col slds-size_3-of-12">
+                <label for="phone">Phone: </label><br><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+            </div>
+     
+            <div class="contactEmail slds-col slds-size_3-of-12">
+                <label for="subject">Subject: </label><br><input  id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
+            </div>
+        </div>
+        <div class="descriptionHolder slds-col slds-size_6-of-12">
+            <label for="description">Description: </label><br><textarea name="description"></textarea><br>
+        </div>
+        <div class="priorityHolder slds-col slds-size_4-of-12">
+            <label for="priority">Priority: </label><br><select  id="priority" name="priority"><option value="">--None--</option><option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+                </select><br>
+        </div>
+    
+        <input type="hidden"  id="external" name="external" value="1" /><br>
+
+        <div class="submitHolder">
+            <input type="submit" name="submit" value="Submit Case">
+        </div>
+    
+    </form>
+    </div>
+</template>
