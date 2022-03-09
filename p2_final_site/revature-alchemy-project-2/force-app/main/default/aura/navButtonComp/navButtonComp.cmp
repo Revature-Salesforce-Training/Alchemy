@@ -1,0 +1,32 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes">  <!-- exposing to a digital experience website/community page -->
+
+
+    <!-- user should be able to click on buttons and change to different app state -->
+    <aura:registerEvent name="doButtonEvent" type="c:navButtonEvent"></aura:registerEvent>
+
+    <!-- Home Page changes mainContainer conditional to reveal home page-->
+    <div class="slds-col slds-size_2-of-12">
+        <button type="button" onclick="{!c.buttonClickJS}" value="HomePage" class="navButton">Home</button>   
+    </div>
+
+    <!-- Catalogue changes mainContainer conditional to reveal Catalogue-->
+    <div class="slds-col slds-size_2-of-12">
+        <button type="button" onclick="{!c.buttonClickJS}" value="Catalogue" class="navButton">Catalogue</button>     
+    </div>
+
+    <!-- Display Cart changes mainContainer conditional to reveal Cart page-->
+    <div class="slds-col slds-size_2-of-12">
+        <button type="button" onclick="{!c.buttonClickJS}" value="DisplayCart" class="navButton">Cart</button>    
+    </div>
+
+    <!-- Twitter Feed changes SideContainer conditional to reveal Twitter Feed-->
+    <div class="slds-col slds-size_2-of-12">
+        <button type="button" onclick="{!c.buttonClickJS}" value="TwitterFeed" class="navButton">Twitter</button>   
+    </div>
+
+    <!-- Newsletter changes SideContainer conditional to reveal Newsletter signup-->
+    <div class="slds-col slds-size_2-of-12">
+        <button type="button" onclick="{!c.buttonClickJS}" value="Newsletter" class="navButton">Newsletter</button>   
+    </div>
+    
+</aura:component>

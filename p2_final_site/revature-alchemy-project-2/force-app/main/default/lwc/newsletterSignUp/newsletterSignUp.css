@@ -1,0 +1,71 @@
+/* Color Theme Swatches in Hex */
+.Graphic-Design-1-hex { color: #023859; }
+.Graphic-Design-2-hex { color: #049DBF; }
+.Graphic-Design-3-hex { color: #D9B589; }
+.Graphic-Design-4-hex { color: #A66151; }
+.Graphic-Design-5-hex { color: #400601; }
+
+div.formHolder {
+    border: 4px solid black;
+    border-radius: 1em;
+    padding: 20px;
+    margin-top: 3rem;
+    background-color: lightgray;
+  }
+
+  input[type=submit]:hover {
+    background-color: #049DBF;
+  }
+
+  input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: whitesmoke;
+}
+
+input[type=submit] {
+  width: 25%;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  margin-left: 600px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.label{
+    color: black;
+}
+
+.form{
+    background-color:#3C5AC8;
+    width: 25%;
+}
+
+.sendMessage{
+
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 20px;
+    color: black;
+    margin-bottom: 2rem;
+
+}
+
+.submitButton {
+  margin-top: 1rem;
+  background-color: rgba(250, 235, 235, 1);
+  border: 2px solid rgba(2, 56, 89, 1);
+  border-radius: .4rem;
+  padding: 0.7rem 1rem;
+}
+
+.submitButton:hover {
+  background-color: rgba(220, 205, 205, 1);
+}

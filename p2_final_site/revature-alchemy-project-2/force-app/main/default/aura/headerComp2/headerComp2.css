@@ -1,0 +1,48 @@
+.THIS {
+}
+.THIS .logoContainer {
+    min-height: 65px;
+    padding-top: 5px;
+    padding-left: 15px;
+}
+
+.THIS .logo {
+    min-height: 65px;
+    min-width: 65px;
+    height: 65px;
+    width: 65px;
+}
+
+.THIS .heroTag {
+    min-height: 65px;
+    padding-top: 5px;
+    text-align: right;
+    padding-right: 15px;
+}
+
+.THIS .heroText:hover {
+    text-decoration: underline;
+}
+
+.THIS .businessTitle {
+    font-size: 2rem;
+    padding-left: 0.5rem;
+    padding-top: 1rem;
+    margin-top: 15px;
+    vertical-align: middle;
+}
+
+.THIS .profileIcon {
+    min-height: 25px;
+    min-width: 25px;
+    height: 25px;
+    width: 25px;
+    margin-right: 5px;
+}
+
+.THIS .logoIcon {
+    min-height: 65px;
+    min-width: 65px;
+    height: 65px;
+    width: 65px;
+}

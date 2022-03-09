@@ -1,0 +1,26 @@
+<apex:page lightningStylesheets="true" docType="HTML-5.0" controller="ResourceController">	
+	
+	<!-- @mention tweet button (developer.twitter.com). Use apex controller to fetch twitterHandle -->
+    <a class="twitter-mention-button" href="https://twitter.com/intent/tweet?screen_name={!twitterHandle}"></a>
+	
+	<!-- twitter timeline anchor. Use apex to fetch twitterHandle -->
+    <a class="twitter-timeline" href="https://twitter.com/{!twitterHandle}"></a>
+
+	<!-- widgets.js for Twitter timeline (developer.twitter.com) -->			
+	<script>window.twttr = (function(d, s, id) {
+  	  var js, fjs = d.getElementsByTagName(s)[0], 
+        t = window.twttr || {};
+      if (d.getElementById(id)) return t;
+  	  js = d.createElement(s);
+  	  js.id = id;
+  	  js.src = "https://platform.twitter.com/widgets.js";
+  	  fjs.parentNode.insertBefore(js, fjs);	
+  	  t._e = [];
+  	  t.ready = function(f) {
+        t._e.push(f);
+  	  };
+  	  return t;
+	  }(document, "script", "twitter-wjs"));
+    </script>	
+
+</apex:page>

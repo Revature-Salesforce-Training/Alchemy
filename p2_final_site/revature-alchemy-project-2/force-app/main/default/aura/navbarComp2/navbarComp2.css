@@ -1,0 +1,31 @@
+.THIS {
+}
+.THIS.navBarContainer {
+    min-height: 45px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: .5rem;
+    border-bottom: 2px solid rgba(2, 56, 89, 1);
+}
+
+.THIS .buttonContainer {
+    list-style: none;
+    text-align: center;
+}
+
+.THIS .buttonContainer li {
+    background-color:rgba(100, 100, 100, .4);
+    padding: 10px 5px;
+}
+
+.THIS .buttonContainer li:hover {
+    background-color: rgba(100, 100, 100, .7);
+}
+
+.THIS .tempSearchReplacer {
+    padding-right: 15px;
+}
+
+.THIS .searchBox label {
+    padding: 10px 5px;
+}

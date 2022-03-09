@@ -1,0 +1,4 @@
+<aura:event type="COMPONENT" description="Nav Button Pressed">
+    <!-- fires when a nav button is pressed. send the value of the button up to parent-->
+    <aura:attribute type="String" name="buttonState"></aura:attribute>
+</aura:event>

@@ -1,0 +1,49 @@
+.detailsHolder {
+    min-height: 80vh;
+    padding: 8% 16%;
+}
+
+.addToCartButtonHolder {
+    border-bottom: 4    px solid rgba(2, 56, 89, 1);
+    min-height: 5rem;
+}
+
+.reviewsHolder {
+    min-height: 10rem;
+    margin-top: 1rem;
+}
+
+.product-image-holder {
+    text-align: center;
+    min-width: 100px;
+    min-height: 100px;
+    width: 300px;
+    height: 300px;
+}
+
+.indv-prod-image {
+    min-width: 100px;
+    min-height: 100px;
+    max-width: 250px;
+    max-height: 250px;
+    width: 100%;
+    height: auto;
+    border: 4px solid rgba(2, 56, 89, 1);
+    border-radius: 2em;
+}
+
+.indv-product-name {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.indv-product-price {
+    font-weight: 800;
+    font-size: 32px;
+    text-align: right;
+}
+
+.product-information-holder {
+    border-bottom: 2px solid black;
+    margin-bottom: 1rem;
+}

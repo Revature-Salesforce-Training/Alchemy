@@ -1,0 +1,9 @@
+.THIS {
+}
+.THIS .navbarHolder {
+    margin-top: 1em;
+}
+
+.THIS.backgroundContainer {
+    background-color: rgba(245, 240, 240, .4);
+}

@@ -1,0 +1,8 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes">  <!-- exposing to a digital experience website/community page -->
+<aura:registerEvent name="doSearchEvent" type="c:doSearch"></aura:registerEvent>
+    <div class="searchBoxHolder">
+        <!-- user should be able to search items -->
+        <button type="button" onclick="{!c.doSearchJS}" class="searchBoxButton">Search</button>
+        <input type="text" aura:id="searchInput" placeholder="Product Name..." class="searchBoxBox"/>
+    </div>
+</aura:component>

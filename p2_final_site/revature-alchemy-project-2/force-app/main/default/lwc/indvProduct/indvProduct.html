@@ -1,0 +1,39 @@
+<template>
+
+    <!-- holds all components (please don't complain about the inconsistent class names this was 5 people working on 30 different CSS files)-->
+    <div class="whole-product-holder slds-grid slds-grid_align-space slds-wrap">
+        <!-- holds the product details like image, name, price, and image-->
+        <div class="detailsHolder slds-col slds-size_10-of-12 slds-grid slds-grid_align-space slds-wrap">
+            <!-- the product's image -->
+            <div class="product-image-holder slds-col slds-size_10-of-12">
+
+                <!-- this script loading of src= violates CSP policies, and since we're
+                        in an Aura app, and Lightning Locker enforces JavaScript Strict Mode
+                        and all the other CSP guidelines, there is absolutely no way to get around this
+                        besides straight up TURNING OFF CSP.-->
+                <!-- We were not taught how to dynamically load static resources or anything,
+                        so this is the best we could do-->
+                <img src={productInfo.imageURL} alt={productInfo.imageAlt} class="indv-prod-image"/>
+            </div>
+            <br />
+            <!-- holds the name and price of the product-->
+            <div class="product-information-holder slds-col slds-size_12-of-12">
+                <h1 class="indv-product-name">{productInfo.Name}</h1>
+                <h1 class="indv-product-price">${productInfo.Price}</h1>
+            </div>
+            <br />
+
+            <!-- holds the add to cart button component-->
+            <div class="addToCartButtonHolder slds-col slds-size_12-of-12">
+                <c-add-product-to-cart></c-add-product-to-cart>
+            </div>
+            <br />
+            
+            <!-- holds the product review component-->
+            <div class="reviewsHolder slds-col slds-size_12-of-12">
+                <c-product-review search-product-id={productInfo.Id}></c-product-review>
+            </div>
+        </div>
+    </div>
+    
+</template>

@@ -1,0 +1,30 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <div class="slds-grid slds-grid_align-space">
+        <div class="slds-col slds-size_8-of-12 slds-grid slds-wrap formHolder">
+            <div class="sendMessage slds-col slds-size_12-of-12">
+                Want More Information? <br/>
+                Sign Up For Our Newsletter!
+            </div>
+
+            <br />
+            <form class="slds-col slds-size_12-of-12">
+                <div>
+                    <label class= "label" for="first_name" >First Name</label><br>
+                    <input  class= "fnameInput" id="first_name"  name="first_name"  type="text" placeholder="Your First Name..." /><br>
+
+                    <label class= "label" for="last_name">Last Name</label><br>
+                    <input  class= "lnameInput" id="last_name"  name="last_name" type="text" placeholder="Your Last Name..."   /><br>
+                </div>
+
+                <br />
+                <div>
+                    <label class= "label" for="email">Email</label><br>
+                    <input  class= "emailInput" id="email"  name="email"  type="text" placeholder="Your Email..." /><br>
+                </div>
+
+                <button class="submitButton" type="button" onclick={createCustomerJS}>Submit</button>
+            </form>
+        </div>
+    </div>
+</template>

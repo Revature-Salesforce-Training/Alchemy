@@ -1,0 +1,28 @@
+.indvReview{
+  
+    margin-top: 2rem;
+    min-height: 5rem;
+    max-height: 10rem;
+    padding: .3rem 1rem;
+    border-right: 3px solid rgba(0,0,0,0);
+    border-left: 3px solid #023859;
+}
+
+.indvReview:nth-child(1){
+    margin-top: 0rem;
+}
+
+.indvReview:hover {
+    border-right: 3px solid #023859;
+}
+
+.catalogueDisplay {
+}
+
+.reviewNameStars {
+    white-space: normal;
+}
+
+strong {
+    font-size: 1.1em;
+}

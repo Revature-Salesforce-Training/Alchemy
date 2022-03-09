@@ -1,0 +1,50 @@
+<aura:component controller="CartListController" implements="forceCommunity:availableForAllPageTypes" access="global">
+
+    <!-- Gather product products cart list -->
+    <aura:attribute name="currentOrder" type="CustomerOrder__c"></aura:attribute>
+    <aura:attribute name="currentOrderId" type="CustomerOrder__c"></aura:attribute>
+
+    
+
+    <!-- Init view on load and refresh when refreshAction is called-->
+    <aura:handler name="init" value="{!this}" action="{!c.getSingleOrder}" />
+    <aura:handler event="force:refreshView" action="{!c.getSingleOrder}" />
+    
+    <lightning:messageChannel type="BigBrotherAppChannel__c" aura:id="BigBrotherAppChannel" onMessage="{!c.handleMessage}"/>
+
+
+    <div class="cart-list-header">
+        Shopping Cart
+    </div>
+    <!-- Iterator over cart items-->
+    <div class="cart-list-container">
+        <div class="items-in-cart-header">
+            Items in Cart
+        </div>
+        <aura:iteration items="{!v.currentOrder.OrderLineItems__r}" var="oli">
+
+            <div class="cart-item-container slds-grid">
+                <div class="product-image">
+                    <img class="product-image-image" src="{!oli.ProductId__r.Image_URL__c}" alt="{!oli.ProductId__r.Image_Alt_Tag__c}"/>
+                </div>
+                <div class="product-detail-holder">
+                    <div class="indv-prod-detail">
+                        {!oli.ProductId__r.Name}
+                    </div>
+                    <div class="indv-prod-detail">
+                        Price: ${!oli.ProductId__r.Product_Price__c}
+                    </div>
+                    <div class="indv-prod-detail">
+                        Quantity: {!oli.Quantity_c__c}
+                    </div>
+                </div>
+            </div>
+        </aura:iteration>
+        <div class="form-holder slds-grid slds-grid_align-end">
+            <form class="slds-col slds-size_2-of-12">
+                <button class="checkout-button" type="submit">Checkout</button>
+            </form> 
+        </div>
+    </div>
+
+</aura:component>

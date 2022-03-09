@@ -1,0 +1,28 @@
+<aura:component>
+    <aura:attribute name="hasLoggedIn" type="Boolean" default="false"></aura:attribute>
+    <aura:attribute name="customerName" type="String" default="Eli Couture"></aura:attribute>
+        <div class="slds-grid">
+            <div class="logoContainer slds-col slds-size_8-of-12">
+                <span class="logo">
+                    <img src="https://freesvg.org/img/old_pocketwatch.png" alt="LOGO" class="logoIcon"></img>
+                </span>
+                <span class="businessTitle">
+                    Big Brother Timepieces
+                </span>
+            </div>
+            <div class="heroTag slds-col slds-size_4-of-12">
+                <!--<aura:if isTrue="{!v.hasLoggedIn}">
+                    <span class="heroText">
+                        Welcome To BBT
+                    </span>
+                    <aura:set attribute="else">
+                        <span class="customerProfilePic">
+                            <img src="https://www.trustedreviews.com/wp-content/uploads/sites/54/2021/08/Screenshot_20210820_124216_sysui.png" alt="Icon" class="profileIcon"></img>
+                        </span>
+                        &nbsp; Hello {!v.customerName}
+                    </aura:set>
+                </aura:if>-->
+                <c:heroTag></c:heroTag>
+            </div>
+        </div>
+</aura:component>

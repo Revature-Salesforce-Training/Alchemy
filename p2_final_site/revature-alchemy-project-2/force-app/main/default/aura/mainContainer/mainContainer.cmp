@@ -1,0 +1,24 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" controller="currentUserInfoController">
+    <aura:attribute type="Boolean" name="isHome" default="true"></aura:attribute>
+    <aura:attribute type="Boolean" name="isCatalogue" default="false"></aura:attribute>
+    <aura:attribute type="Boolean" name="isCart" default="false"></aura:attribute>
+    <aura:attribute type="String" name="orderId"></aura:attribute>
+
+    
+    <lightning:messageChannel type="BigBrotherAppChannel__c" aura:id="BigBrotherAppChannel" onMessage="{!c.handleMessage}"/>
+
+    <aura:if isTrue="{!v.isHome}">
+        <c:homePageMain></c:homePageMain>
+        <!--<h1> this is the isHome page</h1>-->
+    </aura:if>
+    
+    <aura:if isTrue="{!v.isCatalogue}">
+        <c:catalogueDisplay></c:catalogueDisplay>
+    </aura:if>
+
+    <aura:if isTrue="{!v.isCart}">
+        <c:cartList currentOrderId="{!v.orderId}"></c:cartList>
+        <!--<h1> this is the isCart page</h1> -->
+    </aura:if>
+    
+</aura:component>

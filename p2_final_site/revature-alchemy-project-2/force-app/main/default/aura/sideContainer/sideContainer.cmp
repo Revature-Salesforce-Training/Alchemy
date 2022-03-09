@@ -1,0 +1,31 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes">
+    <!-- conditionals of what to display, by default, display Twitter Feed-->
+    <aura:attribute name="isTwitter" type="Boolean" default="true"></aura:attribute>
+    <aura:attribute name="isDetails" type="Boolean" default="false"></aura:attribute>
+    <aura:attribute name="isNewsletter" type="Boolean" default="false"></aura:attribute>
+    <!-- our LMS channel-->
+    <lightning:messageChannel type="BigBrotherAppChannel__c" aura:id="BigBrotherAppChannel" onMessage="{!c.handleMessage}"/>
+
+<div class="sideBarHolder slds-grid slds-grid_align-space">
+    <div class="sideBarBorder slds-col slds-size_11-of-12 slds-grid slds-grid_align-space">
+        <!-- if the correct conditional is true, display our desired component-->
+        <aura:if isTrue="{!v.isTwitter}">
+            <div class="twitterHolder">
+                <c:twitterAuraComp></c:twitterAuraComp>
+            </div>
+        </aura:if>
+            
+        <aura:if isTrue="{!v.isDetails}">
+            <div class="productDetailHolder">
+                <c:indvProduct></c:indvProduct>
+            </div>
+        </aura:if>
+
+        <aura:if isTrue="{!v.isNewsletter}">
+            <div class="newsLetterHolder">
+                <c:newsletterSignUp></c:newsletterSignUp>
+            </div>
+        </aura:if>
+    </div>
+</div>
+</aura:component>

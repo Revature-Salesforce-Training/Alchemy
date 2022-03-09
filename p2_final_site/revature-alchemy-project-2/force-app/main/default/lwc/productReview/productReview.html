@@ -1,0 +1,25 @@
+<!-- sldsValidatorIgnore -->
+<template>
+  <div class="catalogueDisplay slds-col slds-grid slds-wrap slds-grid_align-space">
+
+      <!-- Iterate through the list of 3 reviews retrived from Apex -->
+      <template for:each={reviewList} for:item="review">
+          <div key={review.Id} class="slds-col slds-size_12-of-12 indvReview">
+              <!-- show the customer name and the amount of stars -->
+              <div key={review.Id} class='indvReviewHeader slds-grid slds-grid_align-space'>
+                  <span key={review.Id} class="reviewNameStars slds-col slds-size_11-of-12"> <!--[Name] gave this [_]/5 stars with both inserts bolded-->
+                    <strong>{review.Customer_Name__c}</strong> &nbsp;gave this&nbsp;
+                    <strong>{review.Review_Stars__c}/5</strong> stars
+                  </span>
+              </div>
+              <br key={review.Id}/>
+              <!-- show the customer review -->
+              <div key={review.Id} class='indvReviewContent slds-grid slds-grid_align-space'>
+                  <p key={review.Id} class="reviewContent slds-col slds-size_11-of-12">{review.Review_Content__c}</p>
+              </div>
+          </div>
+      </template>
+  </div>
+
+
+</template>

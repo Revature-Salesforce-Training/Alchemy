@@ -1,0 +1,20 @@
+.THIS.sideBarHolder {
+    min-height: 970px;
+    height: 80vh;
+}
+
+.THIS .twitterHolder {
+    width: 90%;
+}
+
+.THIS .newsLetterHolder {
+    width: 90%;
+}
+
+.THIS .productDetailHolder {
+    width: 86%;
+}
+
+.THIS .sideBarBorder {
+    border-left: 4px solid black;
+}

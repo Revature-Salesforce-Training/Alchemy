@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BBTCustomerId__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <description>BBT Customers</description>
+    <externalId>false</externalId>
+    <label>BBTCustomerId</label>
+    <referenceTo>BBTCustomer__c</referenceTo>
+    <relationshipLabel>CustomerOrders</relationshipLabel>
+    <relationshipName>CustomerOrders</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

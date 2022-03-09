@@ -1,0 +1,19 @@
+{
+    "packageDirectories": [
+        {
+            "path": "force-app",
+            "default": true,
+            "package": "feature-twitterFeed-project2",
+            "versionName": "ver 0.1",
+            "versionNumber": "0.1.0.NEXT"
+        }
+    ],
+    "name": "revature-alchemy-project-2",
+    "namespace": "",
+    "sfdcLoginUrl": "https://login.salesforce.com",
+    "sourceApiVersion": "54.0",
+    "packageAliases": {
+        "feature-twitterFeed-project2": "0Ho8c00000000PpCAI",
+        "feature-twitterFeed-project2@0.1.0-1": "04t8c00000124q9AAA"
+    }
+}

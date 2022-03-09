@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Message channel for Big Brother Time app events</description>
+    <isExposed>true</isExposed>
+    <lightningMessageFields>
+        <description>Main Application state change</description>
+        <fieldName>appStateMain</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>Sidebar Application state change</description>
+        <fieldName>appStateSide</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>Product Id selected change</description>
+        <fieldName>productId</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>Customer Id Change</description>
+        <fieldName>customerId</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>Search Query Change</description>
+        <fieldName>searchQuery</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>Customer Order Id Change</description>
+        <fieldName>orderId</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>Logged In User Id Change</description>
+        <fieldName>userId</fieldName>
+    </lightningMessageFields>
+    <lightningMessageFields>
+        <description>Customer Cart</description>
+        <fieldName>customerCart</fieldName>
+    </lightningMessageFields>
+    <masterLabel>appEventMessageChannel</masterLabel>
+</LightningMessageChannel>

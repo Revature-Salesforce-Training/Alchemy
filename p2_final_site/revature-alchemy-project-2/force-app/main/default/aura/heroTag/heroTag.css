@@ -1,0 +1,19 @@
+.THIS {}
+
+.THIS.heroTag {
+    min-height: 65px;
+    padding-top: 5px;
+    text-align: right;
+    padding-right: 15px;
+    float: right;
+}
+
+.THIS.heroTag:hover {
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.THIS.heroText:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

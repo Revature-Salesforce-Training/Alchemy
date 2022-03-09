@@ -1,0 +1,19 @@
+<!-- Hero Tag component will display icon and name of current user if logged in via Apex controller or a welcome message 
+    :: Project 2 :: Michael Scott 03/05/2022:: 
+-->
+<aura:component controller="currentUserInfoController" implements="forceCommunity:availableForAllPageTypes" access="global">
+    <aura:attribute name="userInfo" type="user" />
+    <aura:handler name="init" value="this" action="{!c.doInit}" />
+
+    <div class="heroTag slds-col slds-size_4-of-12">
+        <aura:if isTrue="{!v.userInfo}">
+            <span class="customerProfilePic"><img src="https://img.icons8.com/ios-glyphs/30/000000/--pocket-watch.png" alt="Welcome " /></span>
+            &nbsp;&nbsp;<span class="heroText">Hello {!v.userInfo.Name}</span>
+            <aura:set attribute="else">
+                <span class="heroText">
+                    Welcome To BBT
+                </span>
+            </aura:set>
+        </aura:if>
+    </div>
+</aura:component>

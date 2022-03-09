@@ -1,0 +1,16 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" controller="CartListController">
+    <!-- will be sent different events from nav buttons and search button -->
+    <aura:handler name="doSearchEvent"  event="c:doSearch"          action="{!c.handleSearch}"/>
+    <aura:handler name="doButtonEvent"  event="c:navButtonEvent"    action="{!c.handleNavChange}"/>
+    <lightning:messageChannel type="BigBrotherAppChannel__c" aura:id="BigBrotherAppChannel"/>
+
+    <div class="slds-grid slds-grid_align-spread navBarContainer">
+        <!-- show nav buttons on left, and search bar on the right-->
+        <div class="slds-col slds-size_7-of-12 buttonBox slds-grid slds-grid_align-space">
+            <c:navButtonComp></c:navButtonComp>
+        </div>
+        <div class="slds-col slds-size_4-of-12 searchBox slds-grid slds-grid_align-end">
+            <c:searchBar></c:searchBar>
+        </div>
+    </div>
+</aura:component>

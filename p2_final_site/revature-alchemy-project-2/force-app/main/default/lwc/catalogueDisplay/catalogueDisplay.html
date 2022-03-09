@@ -1,0 +1,34 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <div class="slds-col slds-size_12-of-12">
+
+        <!-- currently unused, but might be used later-->
+        <div class="searchTitle slds-col slds-size_4-of-12"></div><br />
+        <!--<button onclick={bringUpIndvProduct}>Click Me</button><br />-->
+        <!-- this button is explicitly for testing LMS publishing without needing to set up navbar or event handling-->
+
+        <div class="catalogueDisplay slds-col slds-grid slds-gutters slds-wrap slds-grid_align-spread">
+            <!-- this iterator template will go through all items in the productCatalogue (limited to 12)-->
+            <!-- and create a small section for each one-->
+            <template for:each={productCatalogue} for:item="product">
+                <div key={product.Id} class="slds-col slds-size_3-of-12 indvProdItem">
+
+                    <!-- the Image box hold the image itself (this is to ensure its on a different line than the words)-->
+                    <div key={product.Id} class="slds-col slds-size_12-of-12 indvProdImgBox">
+                        <img src={product.Image_URL__c} alt={product.Image_Alt_Tag__c} key={product.Id} class="productImage"/>
+                    </div>
+                    <br key={product.Id}/>
+                    
+                    
+                    <!-- display the name and price for each product in the loop-->
+                    <h1 key={product.Id} class="productName slds-col slds-size_11-of-12">{product.Name}</h1>
+                    <h1 key={product.Id} class="productPrice slds-col slds-size_9-of-12">${product.Product_Price__c}</h1>
+                    <button class="catalogueButton" type="button" value={product.Id} key={product.Id} onclick={bringUpIndvProduct}>View Product</button>
+                </div>
+
+            </template>
+        </div>
+
+    </div>
+    
+</template>

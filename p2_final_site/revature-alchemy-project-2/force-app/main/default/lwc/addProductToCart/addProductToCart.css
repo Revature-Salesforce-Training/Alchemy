@@ -1,0 +1,125 @@
+.product-detail {
+    width: 100%;
+}
+
+.product-name {
+    font-size: 24pt;
+    font-weight: bold;
+}
+
+.product-picture-carousel {
+    height: 350px;
+    width: 350px;
+    text-align: center;
+    border: 4px solid #023859;
+    border-radius: 1rem;
+}
+
+.product-description {
+    font-size: 14pt;
+    font-weight: normal;
+}
+
+.product-image {
+    border-width: 2px;
+    border-color: black;
+    text-align: center;
+}
+
+.product-add-to-cart {
+    display: flex;
+    flex: 1 1 1;
+    justify-content: center;
+    margin: 2 rem;
+    width: 100%;
+    padding: 1rem 0rem;
+}
+
+.add-to-cart-item {
+    width: 100px;
+}
+
+.quantity-label {
+    vertical-align: center;
+}
+
+.add-to-cart-button {    
+    min-width: 6rem;
+    min-height: 1.5rem;
+    max-width: 7rem;
+    max-height: 2.5rem;
+    text-align: center;
+}
+.add-to-cart-button img {
+    width: 0.75rem;
+}
+
+input.quantity-field {
+    height: 1.5rem;
+}
+span.quantity-button {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: block;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 1.2rem;
+    vertical-align: center;
+    padding: 1px 2px;
+    border: 2px solid rgba(0,0,0,0);
+    font-family: monospace, Consolas;
+}
+
+span.quantity-button:hover {
+    background-color: #D9B589;    
+}
+
+.cart-button-word {
+    margin-left: 0.01rem;
+}
+
+.quantityTextHolder,
+.addToCartButton {
+    display: inline;
+}
+
+.addToCartTotal {
+    padding-left: .3rem;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.quantityButtonholder {
+    width: 8%;
+    min-width: 3rem;
+    max-width: 4rem;
+}
+
+.quantityButtonAdd {
+    margin-left: .3rem;
+    margin-right: 30%;
+}
+
+.quantityButtonMinus {
+    margin-right: .3rem;
+    margin-left: 30%;
+}
+
+.quantityTextInput {
+    text-align: center;
+}
+
+.buttonHolderTop {
+    margin-bottom: .5rem;
+}
+
+.add-to-cart-button {
+    background-color: rgba(250, 235, 235, 1);
+    border: 2px solid rgba(2, 56, 89, 1);
+    border-radius: .4rem;
+    padding: 0.3rem;
+}
+
+.add-to-cart-button:hover {
+    background-color: rgba(220, 205, 205, 1);
+}

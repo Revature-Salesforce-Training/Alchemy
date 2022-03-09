@@ -1,0 +1,19 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes">
+    <aura:attribute name="vfHost" type="String" default="resilient-impala-n8lfls-dev-ed.lightning.force.com" />
+    <aura:attribute name="defaultTwitterHandle" type="String" default="?twitterHandle=BBTimepieces" />
+    <!-- store the name of our domain where we host the apex page-->
+    <!-- <aura:attribute name="vfHost" type="String" default="https://resilient-impala-n8lfls-dev-ed.lightning.force.com" /> -->
+    <!--<aura:attribute name="defaultTwitterHandle" type="String" default="?twitterHandle=BBTimepieces" />-->
+
+    <div class="slds-grid slds-grid_align-space">
+        <div class="slds-col slds-size_10-of-12">
+            <!-- load an iframe with a src of our Twitter Feed Page -->
+            <!-- without access the a head/body of the HTML page, there is no way to reduce
+                    CSP restrictions to allow this frame to load without turning off CSP restrictions entirely-->
+            <!--<iframe class="twitterIframe" aura:id="vfFrame" src="{!v.vfHost + '/apex/TwitterFeedPage'}"/>-->
+            <!--<iframe class="twitterIframe" aura:id="vfFrame" src="https://brave-impala-m5qs1e-dev-ed.builder.salesforce-communities.com/apex/TwitterFeedPage" />-->
+            <iframe class="twitterIframe" aura:id="vfFrame" src="https://resilient-impala-n8lfls-dev-ed--c.visualforce.com/apex/TwitterFeedPage" />
+            <!--<c:twitterHandlerLwc></c:twitterHandlerLwc>-->
+        </div>
+    </div>
+</aura:component>

@@ -1,0 +1,4 @@
+<aura:event type="COMPONENT" description="Search button Pressed">
+    <!-- fires when the search button is passed, send whats in the search box up -->
+    <aura:attribute name="searchKey" type="String"></aura:attribute>
+</aura:event>

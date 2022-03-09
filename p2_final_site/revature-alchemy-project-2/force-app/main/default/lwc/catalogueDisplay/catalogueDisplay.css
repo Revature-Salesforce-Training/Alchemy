@@ -1,0 +1,57 @@
+.indvProdItem {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2px;
+    padding-bottom: 2rem;
+    border: 2px solid rgba(0,0,0,0);
+}
+
+.indvProdItem:hover {
+    border-bottom: 2px solid black;
+    margin-bottom: 0px;
+}
+
+.indvProdImgBox {
+    min-height: 100px;
+    min-width: 100px;
+    margin-top: 2rem;
+}
+
+.indvProdImgBox img {
+    overflow: hidden;
+    height: 150px;
+    width: 150px;
+    background-color: whitesmoke;
+}
+
+.indvProdItem h1 {
+    padding-left: 2rem;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.indvProdItem h1.productName {
+    font-size: 1.2rem;
+}
+
+.indvProdItem .ProductPrice {
+    font-weight: 500;
+}
+
+.indvProdImgBox .productImage {
+    border: 3px solid rgba(2, 56, 89, 1);
+    border-radius: .5rem;
+}
+
+.catalogueButton {
+    margin-top: .3rem;
+    background-color: rgba(250, 235, 235, 1);
+    border: 2px solid rgba(2, 56, 89, 1);
+    border-radius: .4rem;
+    padding: 0.3rem;
+}
+
+.catalogueButton:hover {
+    background-color: rgba(220, 205, 205, 1);
+}

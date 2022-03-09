@@ -1,0 +1,14 @@
+.THIS.searchBoxHolder {
+    padding: 1rem 1.4rem;
+    padding-left: 0rem;
+    vertical-align: center;
+}
+
+.THIS.searchBoxHolder .searchBoxBox,
+.THIS.searchBoxHolder .searchBoxButton {
+    vertical-align: center;
+}
+
+.THIS .searchBoxBox {
+    margin-left: .3rem;
+}

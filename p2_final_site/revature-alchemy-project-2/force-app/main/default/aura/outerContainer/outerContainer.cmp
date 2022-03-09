@@ -1,0 +1,28 @@
+<aura:component implements="forceCommunity:themeLayout" access="global">
+<!-- this is the themeLayout and hold everything in the entire application -->
+    <div class="backgroundContainer">
+        <!-- header should be roughly 65 pixels tall, and it will show like: -->
+        <!-- LOGO - BUSINESS NAME-->                    <!-- PFP & User Name-->
+        <div class="headerHolder">
+            <c:headerComp2></c:headerComp2>
+        </div>
+        <!-- nav bar contains navigation buttons and search bar, should be roughly 45 pixels tall, should show like: -->
+        <!-- NAVBTN NAVBTN NAVBTN NAVBTN NAVBTN --> <!-- SRCHBTN [input box]-->
+        <div class="navbarHolder">
+            <c:navbarComp2></c:navbarComp2>
+        </div>
+
+        <!-- these two are split 75% left, main Container
+                            and 25% right, side Container-->
+        <!-- these are controlled via an LMS app state that will be handled and set different
+            conditionals to true-->
+        <div class="slds-grid containerHolder">
+            <div class="slds-col slds-size_8-of-12">
+                <c:mainContainer></c:mainContainer>
+            </div>
+            <div class="slds-col slds-size_4-of-12">
+                <c:sideContainer></c:sideContainer>
+            </div>
+        </div>
+    </div>
+</aura:component>

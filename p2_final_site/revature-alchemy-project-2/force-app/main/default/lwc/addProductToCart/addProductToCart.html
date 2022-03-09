@@ -1,0 +1,48 @@
+<template>
+    <!-- outer holder to hold the entire container in slds-grid -->
+    <div class="product-add-to-cart slds-grid slds-wrap slds-grid_align-space" >
+
+        <!-- hold the [-] [quantity] [+] sections-->
+        <div class="slds-col slds-size_10-of-12 buttonHolderTop">
+
+                <!-- the Minus Quantity Button, triggers subtractQuantity method-->
+                <span class="quantityButtonHolder quantityButtonMinus">
+                    <button class="quantity-button" aria-label="Subtract Quantity Button" value="subtract" onclick={subtractQuantity}>-</button>
+                </span>
+
+                <!-- The Display of Quantity, as well as manual input-->
+                <div class="quantityTextHolder">
+                    <input type="text" class="quantity-field quantityTextInput" value={quantity} name="quantity" size=2>
+                </div>
+
+                <!-- the Add Quantity Button-->
+                <span class="quantityButtonHolder quantityButtonAdd">                        
+                    <button class="quantity-button" aria-label="Add Quantity Button" value="add" onclick={addQuantity} onchange={onQuantityChange}>+</button>
+                </span>
+        </div>
+
+        <!-- simple spacing line breaks-->
+        <br />
+        <br />
+        <br />
+        
+        <!-- holds the Add to Cart Button (with image) and the Total -->
+        <div class="slds-col slds-size_10-of-12 slds-grid slds-grid_align-spread buttonHolderBottom">
+
+            <!-- the Add To Cart button itself-->
+            <div class="slds-col slds-size_4-of-12 addToCartButton">            
+                <button type="button" class="add-to-cart-button" onclick={createAndAddProductLineItemToCart} >
+                    <svg class="slds-button__icon" aria-hidden="true">
+                        <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#cart"></use>
+                    </svg>
+                    <span class="cart-button-word">Add to Cart</span>
+                </button>
+            </div>
+
+            <!-- the Total Cost, as calculated-->
+            <div class="addToCartTotal slds-size_5-of-12">                        
+                <span>Total: </span><span>{totalcost}</span>
+            </div>
+        </div>
+    </div>
+</template>
