@@ -47,4 +47,4 @@ Creating a LWC Experience Cloud site & imperative business solutions.
 - Connect Application State
 - Connect Twitter Feed 
 - Shopping cart implementation
-- Searh catalogue
+- Search catalogue
