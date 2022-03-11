@@ -31,20 +31,20 @@ Creating a LWC Experience Cloud site & imperative business solutions.
   -We created a company called Revo and made a customer facing website to sell customizable shoes. We successfully modeled a business-to-customer design using Lightning Web Components, meeting and exceeding all expectations. We were able to crate a community site deployed on the Experience Cloud with business relevant features, Apex classes, and declarative customizations. Each team member was responsible for coding a feature, updating a branch on the code repository, and following package-based development.
 
 ## Technologies: 
--Lightning Web Components
--Apex
--Javascript, HTML, CSS
+- Lightning Web Components
+- Apex
+- Javascript, HTML, CSS
 
 ## Features:
--Web-to-Lead 
--Twitter Feed
--Product Availability
--Order Search
--Account Creator
--Application State
+- Web-to-Lead 
+- Twitter Feed
+- Product Availability
+- Order Search
+- Account Creator
+- Application State
 
 ## Still-to-come improvements:
--Connect Application State
--Connect Twitter Feed 
--Shopping cart implementation
--Searh catalogue
+- Connect Application State
+- Connect Twitter Feed 
+- Shopping cart implementation
+- Searh catalogue
