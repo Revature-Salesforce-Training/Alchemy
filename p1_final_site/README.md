@@ -28,7 +28,7 @@ Creating a LWC Experience Cloud site & imperative business solutions.
 	Presentation and Styling:
 	-The developers must ensure that the experience cloud site contains uniform customized styling to denote it as a polished and branded experience. Styling will require the use of CSS and leveraging SLDS with consistent styling for HTML elements. Additionally, the developer will be required to have the entire project on a GitHub repo and follow reasonable branching procedures. Finally, as part of the live demo, the developer will clone the master branch of the repo and push the customization to a fresh org.
 	
-  -We created a company called Revo and made a customer facing website to sell customizable shoes. We successfully modeled a business-to-customer design using Lightning Web Components, meeting and exceeding all expectations. We were able to crate a community site deployed on the Experience Cloud with business relevant features, Apex classes, and declarative customizations. Each team member was responsible for coding a feature, updating a branch on the code repository, and following package-based development.
+  -We created a company called Revo and made a customer facing website to sell customizable shoes. We successfully modeled a business-to-customer design using Lightning Web Components, meeting and exceeding all expectations. We were able to crate a community site deployed on the Experience Cloud with business relevant features, Apex classes, and declarative customizations. Each team member was responsible for coding a feature with declarative customizations, updating a branch on the code repository, and following package-based development.
 
 ## Technologies: 
 - Lightning Web Components
