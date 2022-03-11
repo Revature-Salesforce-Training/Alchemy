@@ -27,7 +27,7 @@ Project Description: Create a LWC Experience Cloud site with imperative business
 	Presentation and Styling:
 	-The developers must ensure that the experience cloud site contains uniform customized styling to denote it as a polished and branded experience. Styling will require the use of CSS and leveraging SLDS with consistent styling for HTML elements. Additionally, the developer will be required to have the entire project on a GitHub repo and follow reasonable branching procedures. Finally, as part of the live demo, the developer will clone the master branch of the repo and push the customization to a fresh org.
 	
-  -We created a company called Revo with a customer facing website to sell customizable shoes. We successfully modeled a business-to-customer design for our sight using Lightning Web Components and Apex Controllers. We were able to sucessfully create a community site deployed on the Experience Cloud, with integrated business imperative solutions and declarative customizations. Each team member was responsible for coding a feature, making declarative customizations, updating a branch on the code repository, and following package-based development.
+  - We created a company called Revo with a customer facing website to sell customizable shoes. We successfully modeled a business-to-customer design for our sight using Lightning Web Components and Apex Controllers. We were able to sucessfully create a community site deployed on the Experience Cloud, with integrated business imperative solutions and declarative customizations. Each team member was responsible for coding a feature, making declarative customizations, updating a branch on the code repository, and following package-based development.
 
 ## Technologies: 
 - Lightning Web Components
@@ -44,7 +44,8 @@ Project Description: Create a LWC Experience Cloud site with imperative business
 
 ## Still-to-come improvements:
 - Consistent Styling and Branding
-- Connect Application State
-- Connect Twitter Feed 
+- Implement Application State
+- Connect and make Twitter Feed Dynamic
 - Shopping cart implementation
-- Search catalogue
+- Search catalogue and Product Details
+- Web-to-Account custom form
